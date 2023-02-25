@@ -20,7 +20,7 @@ int main()
     cout<<"Enter the x,y& r point";
     cin>>xc>>yc>>r;
     initgraph(&gd, &gm," ");
-     int d = 1-r ;
+     int d = 3-2*(r);
     int x = 0, y =r;
 
     while(x<=y)
@@ -29,14 +29,14 @@ int main()
         if (d<0)
         {
 
-            d= d+2*(x)+3;
+            d= d+4*(x)+6;
 
         }
         else
         {
 
 
-        d=d+2*(x-y)+5;
+        d=d+4*(x-y)+10;
             y--;
         }
         x++;
